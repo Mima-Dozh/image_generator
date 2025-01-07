@@ -9,5 +9,9 @@ add_executable(read_dots main.cpp)
 
 add_subdirectory(include)
 
-target_link_libraries(read_dots parser)
-
+find_package(fmt CONFIG REQUIRED)
+find_package(unofficial-sqlite3 CONFIG REQUIRED)
+target_link_libraries(read_dots
+                      PRIVATE parser
+                      PRIVATE unofficial::sqlite3::sqlite3
+                      PRIVATE fmt::fmt)
