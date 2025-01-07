@@ -1,5 +1,8 @@
+#pragma once
+
 #include <vector>
 #include <fstream>
+#include <regex>
 
 #include <rapidjson/istreamwrapper.h>
 #include <rapidjson/document.h>

@@ -1,3 +1,5 @@
+#include <regex>
+
 #include "read_file.h"
 
 using namespace rapidjson;
@@ -19,9 +21,14 @@ std::vector<PointInfo> read_bin_file(const std::filesystem::path& file_path) {
 std::vector<PointInfo> read_txt_file(const std::filesystem::path& file_path) {
     std::vector<PointInfo> res;
     std::ifstream in(file_path, std::ios::binary|std::ios::in);
-    std::string line;
+    std::string group, str_x, str_y;
     while (in.peek() != EOF){
-        getline(in, line);
+        std::getline(in, group, ':');
+        std::getline(in, str_x, ',');
+        std::getline(in, str_y);
+        auto x = std::stoi(str_x);
+        auto y = std::stoi(str_y);
+        res.push_back(PointInfo(file_path, group, x, y));
     }
     in.close();
 

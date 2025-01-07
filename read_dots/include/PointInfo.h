@@ -11,9 +11,9 @@ struct BinPointInfo{
 
 struct PointInfo{
 public:
-    PointInfo(std::filesystem::path file_name, std::string group, uint32_t x, uint32_t y);
+    PointInfo(std::filesystem::path file_path, std::string group, uint32_t x, uint32_t y);
 
-    PointInfo(std::filesystem::path file_name, BinPointInfo bin_point);
+    PointInfo(std::filesystem::path file_path, BinPointInfo bin_point);
 
     std::filesystem::path file_name_;
     std::string group_;
