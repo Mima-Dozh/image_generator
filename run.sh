@@ -13,5 +13,4 @@ if [ ! -d ./image ]; then
   mkdir image
 fi
 
-pip install -r requirements.txt
 python3 ./make_image/__main__.py
