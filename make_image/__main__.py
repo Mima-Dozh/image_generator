@@ -24,4 +24,4 @@ for i, v in enumerate(categories):
 plt.gca().set(xlabel='x', ylabel='y')
 
 plt.legend(fontsize=12)
-plt.savefig('foo.png')
+plt.savefig('./image/point.png')

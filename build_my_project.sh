@@ -1,4 +1,6 @@
 #!/bin/bash
 
-cmake -B ./build -S ./read_dots/
+create_build_folder="cmake -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT"/scripts/buildsystems/vcpkg.cmake -B ./build -S ./read_dots/"
+
+eval $create_build_folder
 cmake --build ./build/
