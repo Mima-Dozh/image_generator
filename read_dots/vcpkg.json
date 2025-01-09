@@ -1,7 +1,6 @@
 {
   "dependencies": [
     "rapidjson",
-    "sqlite3",
-    "fmt"
+    "sqlite3"
   ]
 }
