@@ -1,4 +1,0 @@
-/mnt/d/Тестовое/image_generator/read_dots/include/build/CMakeFiles/parser.dir
-/mnt/d/Тестовое/image_generator/read_dots/include/build/CMakeFiles/PointInfo.dir
-/mnt/d/Тестовое/image_generator/read_dots/include/build/CMakeFiles/edit_cache.dir
-/mnt/d/Тестовое/image_generator/read_dots/include/build/CMakeFiles/rebuild_cache.dir

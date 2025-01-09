@@ -3,3 +3,7 @@
 */CMakeUserPresets.json
 
 /test/*
+
+/data_base/*
+
+/image/*

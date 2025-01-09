@@ -1,5 +1,3 @@
-#include <regex>
-
 #include "read_file.h"
 
 using namespace rapidjson;

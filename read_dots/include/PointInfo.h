@@ -3,13 +3,13 @@
 #include <cinttypes>
 #include <filesystem>
 
-struct BinPointInfo{
+struct BinPointInfo {
     uint32_t group:8;
     uint32_t x:12;
     uint32_t y:12;
 };
 
-struct PointInfo{
+struct PointInfo {
 public:
     PointInfo(std::filesystem::path file_path, std::string group, uint32_t x, uint32_t y);
 
